@@ -1,0 +1,11 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.json
+*.tfvars
+*.tfvars.json
+.terraformrc
+terraform.rc
+.DS_Store
+
