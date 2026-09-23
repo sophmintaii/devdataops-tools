@@ -1,6 +1,5 @@
-Acquiring state lock. This may take a few moments...
-google_storage_bucket.gcs_bucket: Refreshing state... [id=devdataops-hw-bucket]
 google_bigquery_dataset.gbq_dataset: Refreshing state... [id=projects/devdataops-hw/datasets/devdataops_hw_dataset]
+google_storage_bucket.gcs_bucket: Refreshing state... [id=devdataops-hw-bucket]
 google_compute_instance.vm: Refreshing state... [id=projects/devdataops-hw/zones/us-central1-c/instances/devdataops-hw-vm]
 
 Terraform used the selected providers to generate the following execution
@@ -11,7 +10,7 @@ Terraform will perform the following actions:
 
   # google_bigquery_dataset.gbq_dataset will be destroyed
   - resource "google_bigquery_dataset" "gbq_dataset" {
-      - creation_time                   = 1790174197057 -> null
+      - creation_time                   = 1790175341033 -> null
       - dataset_id                      = "devdataops_hw_dataset" -> null
       - default_partition_expiration_ms = 0 -> null
       - default_table_expiration_ms     = 0 -> null
@@ -19,11 +18,11 @@ Terraform will perform the following actions:
       - effective_labels                = {
           - "goog-terraform-provisioned" = "true"
         } -> null
-      - etag                            = "9f9f8amt/SlwtXTQ7+b5ng==" -> null
+      - etag                            = "HoSxcKewXWKTOyFy7B7/Tg==" -> null
       - id                              = "projects/devdataops-hw/datasets/devdataops_hw_dataset" -> null
       - is_case_insensitive             = false -> null
       - labels                          = {} -> null
-      - last_modified_time              = 1790174197057 -> null
+      - last_modified_time              = 1790175341033 -> null
       - location                        = "us-central1" -> null
       - max_time_travel_hours           = "168" -> null
       - project                         = "devdataops-hw" -> null
@@ -67,7 +66,7 @@ Terraform will perform the following actions:
         } -> null
       - enable_display       = false -> null
       - id                   = "projects/devdataops-hw/zones/us-central1-c/instances/devdataops-hw-vm" -> null
-      - instance_id          = "7472548704929340696" -> null
+      - instance_id          = "8103368324267529856" -> null
       - label_fingerprint    = "vezUS-42LLM=" -> null
       - labels               = {} -> null
       - machine_type         = "e2-micro" -> null
@@ -110,7 +109,7 @@ Terraform will perform the following actions:
           - internal_ipv6_prefix_length = 0 -> null
           - name                        = "nic0" -> null
           - network                     = "https://www.googleapis.com/compute/v1/projects/devdataops-hw/global/networks/default" -> null
-          - network_ip                  = "10.128.0.4" -> null
+          - network_ip                  = "10.128.0.5" -> null
           - queue_count                 = 0 -> null
           - stack_type                  = "IPV4_ONLY" -> null
           - subnetwork                  = "https://www.googleapis.com/compute/v1/projects/devdataops-hw/regions/us-central1/subnetworks/default" -> null
@@ -118,7 +117,7 @@ Terraform will perform the following actions:
             # (3 unchanged attributes hidden)
 
           - access_config {
-              - nat_ip                 = "34.171.180.185" -> null
+              - nat_ip                 = "35.238.48.109" -> null
               - network_tier           = "PREMIUM" -> null
                 # (1 unchanged attribute hidden)
             }
@@ -165,7 +164,7 @@ Terraform will perform the following actions:
       - url                         = "gs://devdataops-hw-bucket" -> null
 
       - soft_delete_policy {
-          - effective_time             = "2026-09-23T14:36:37.698Z" -> null
+          - effective_time             = "2026-09-23T14:55:41.676Z" -> null
           - retention_duration_seconds = 604800 -> null
         }
     }
@@ -176,16 +175,17 @@ Changes to Outputs:
   - bigquery_dataset_id = "projects/devdataops-hw/datasets/devdataops_hw_dataset" -> null
   - gcs_bucket_name     = "devdataops-hw-bucket" -> null
   - gcs_bucket_url      = "gs://devdataops-hw-bucket" -> null
-  - vm_external_ip      = "34.171.180.185" -> null
-  - vm_internal_ip      = "10.128.0.4" -> null
+  - vm_external_ip      = "35.238.48.109" -> null
+  - vm_internal_ip      = "10.128.0.5" -> null
   - vm_name             = "devdataops-hw-vm" -> null
 google_storage_bucket.gcs_bucket: Destroying... [id=devdataops-hw-bucket]
-google_bigquery_dataset.gbq_dataset: Destroying... [id=projects/devdataops-hw/datasets/devdataops_hw_dataset]
 google_compute_instance.vm: Destroying... [id=projects/devdataops-hw/zones/us-central1-c/instances/devdataops-hw-vm]
+google_bigquery_dataset.gbq_dataset: Destroying... [id=projects/devdataops-hw/datasets/devdataops_hw_dataset]
 google_bigquery_dataset.gbq_dataset: Destruction complete after 1s
-google_storage_bucket.gcs_bucket: Destruction complete after 2s
+google_storage_bucket.gcs_bucket: Destruction complete after 1s
 google_compute_instance.vm: Still destroying... [id=projects/devdataops-hw/zones/us-central1-c/instances/devdataops-hw-vm, 00m10s elapsed]
 google_compute_instance.vm: Still destroying... [id=projects/devdataops-hw/zones/us-central1-c/instances/devdataops-hw-vm, 00m20s elapsed]
-google_compute_instance.vm: Destruction complete after 23s
+google_compute_instance.vm: Still destroying... [id=projects/devdataops-hw/zones/us-central1-c/instances/devdataops-hw-vm, 00m30s elapsed]
+google_compute_instance.vm: Destruction complete after 34s
 
 Destroy complete! Resources: 3 destroyed.

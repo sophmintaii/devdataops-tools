@@ -1,3 +1,4 @@
+Acquiring state lock. This may take a few moments...
 
 Terraform used the selected providers to generate the following execution
 plan. Resource actions are indicated with the following symbols:
@@ -139,10 +140,11 @@ Changes to Outputs:
 google_bigquery_dataset.gbq_dataset: Creating...
 google_storage_bucket.gcs_bucket: Creating...
 google_compute_instance.vm: Creating...
-google_bigquery_dataset.gbq_dataset: Creation complete after 1s [id=projects/devdataops-hw/datasets/devdataops_hw_dataset]
+google_bigquery_dataset.gbq_dataset: Creation complete after 2s [id=projects/devdataops-hw/datasets/devdataops_hw_dataset]
 google_storage_bucket.gcs_bucket: Creation complete after 3s [id=devdataops-hw-bucket]
 google_compute_instance.vm: Still creating... [00m10s elapsed]
-google_compute_instance.vm: Creation complete after 17s [id=projects/devdataops-hw/zones/us-central1-c/instances/devdataops-hw-vm]
+google_compute_instance.vm: Still creating... [00m20s elapsed]
+google_compute_instance.vm: Creation complete after 27s [id=projects/devdataops-hw/zones/us-central1-c/instances/devdataops-hw-vm]
 
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 
@@ -151,6 +153,6 @@ Outputs:
 bigquery_dataset_id = "projects/devdataops-hw/datasets/devdataops_hw_dataset"
 gcs_bucket_name = "devdataops-hw-bucket"
 gcs_bucket_url = "gs://devdataops-hw-bucket"
-vm_external_ip = "34.171.180.185"
-vm_internal_ip = "10.128.0.4"
+vm_external_ip = "35.238.48.109"
+vm_internal_ip = "10.128.0.5"
 vm_name = "devdataops-hw-vm"
